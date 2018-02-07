@@ -6,7 +6,7 @@
     <meta name="keywords" content="thcborges, ">
     <meta name="author" content="Thiago da Cunha Borges">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!--    <meta http-equiv="refresh" content="1">-->
+    <meta http-equiv="refresh" content="1">
     <title>Date e Operadores Relacionais</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
           integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -16,7 +16,7 @@
 <body class="m-5">
 <div class="container">
     <h1>Date e Operadores Relacionais</h1>
-<!--    --><?php //date_default_timezone_set("America/Sao_Paulo"); ?>
+    <?php date_default_timezone_set('UTC'); ?>
     <h2 class="bg-primary text-center p-3">
         date_default_timezone_get(): <strong><?php echo date_default_timezone_get();?></strong>
     </h2>

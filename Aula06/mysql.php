@@ -7,7 +7,7 @@ if ($mysqli->connect_errno) {
 echo $mysqli->host_info . "\n";
 
 // Criando banco de dados
-if (!$mysqli->query("CREATE DATABASE IF NOT EXISTS `paw`;")) {
+if (!$mysqli->query("CREATE DATABASE IF NOT EXISTS `teste`;")) {
     echo "Falha ao criar o BANCO DE DADOS: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
 } else {
     echo "BANCO DE DADOS criado com sucesso\n";
@@ -41,7 +41,7 @@ if (!$mysqli->query(
     "CREATE TABLE IF NOT EXISTS cliente (
 	id INT NOT NULL AUTO_INCREMENT,
     nome VARCHAR(50) NOT NULL,
-    endereco VARCHAR(50),
+    endereco VARCHAR(80),
     PRIMARY KEY (id),
     KEY nomecliente(nome)
 )"
